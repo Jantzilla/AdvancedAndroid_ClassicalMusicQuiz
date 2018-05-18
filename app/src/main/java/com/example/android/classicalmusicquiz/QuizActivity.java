@@ -258,6 +258,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
      * Release ExoPlayer.
      */
     private void releasePlayer() {
+        mNotificationManager.cancelAll();
         mExoPlayer.stop();
         mExoPlayer.release();
         mExoPlayer = null;
@@ -388,7 +389,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
         mMediaSession.setPlaybackState(mStateBuilder.build());
         
-        // TODO (2): Call the method to show the notification, passing in the PlayBackStateCompat object.
+        // COMPLETED (2): Call the method to show the notification, passing in the PlayBackStateCompat object.
+        showNotification(mStateBuilder.build());
     }
 
     @Override
