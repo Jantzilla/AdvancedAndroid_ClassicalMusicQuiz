@@ -50,7 +50,7 @@ import com.google.android.exoplayer2.util.Util;
 
 import java.util.ArrayList;
 
-// COMPLETED (1): Have this Activity implement ExoPlayer.EventListener and add the required methods.
+// COMPLETED (1): Have this Activity implement ExoPlayer.EventListener and add the required methods .
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener, ExoPlayer.EventListener {
 
     private static final int CORRECT_ANSWER_DELAY_MILLIS = 1000;
